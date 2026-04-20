@@ -252,6 +252,7 @@ img:hover {
     top: 0;
     color: lightgray;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -268,7 +269,7 @@ img:hover {
     align-items: center;
 }
 .box {
-    background-color: lightblue;
+    background-color: lightseagreen;
     padding: 20px;
     text-align: center;
 }
