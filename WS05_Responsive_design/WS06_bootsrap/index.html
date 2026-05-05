@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julian ensimmäinen sivu</title>
+</head>
+<head>
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<header>
+<nav class="responsive-nav">
+     <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+</nav>
+</header>
+<body>
+        <h1 style="color: rgb(255, 0, 187);">Welcome to Julian Page</h1>
+        <p>This is a paragraph.</p>
+        <img src="./IMG_5734[12.JPG" alt="Description of image">
+        <h2>Tietoja minusta</h2>
+    <ol>
+        <li>Kuvassa on koirani Steffe</li>
+        <li>Olen 22-vuotias</li>
+        <li>Tämä kurssi on minulle täysin uutta</li>
+    </ol>
+    
+    <h2>Mistä pidän?</h2>
+    <ul>
+        <li>Rakastan jäätelöä</li>
+        <li>Pidän valokuvaamisesta</li>
+        <li>Pidän eläimistä</li>
+    </ul>
+    <a href="https://www.zalando.fi/">Zalando</a>
+    <table>
+    <tr>
+        <th>Mikä on vaikeaa?</th>
+        <th>Mikä helppoa?</th>
+    </tr>
+    <tr>
+        <td>Tiedostojen lataus</td>
+        <td>Itse tekeminen on helppoa</td>
+    </tr>
+    <tr>
+        <td>Ymmärtäminen koodauksesta</td>
+        <td>Koodien kirjoittaminen</td>
+    </tr>
+    </table>
+    <form>
+    <label for="name">Nimi:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Sähköposti:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+     <style>
+            h2 {
+                color: rgb(47, 0, 128);
+            }
+            p {
+                color: blue;
+            }
+            body {
+                background-color: #ffb6e8;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .paddingandmargin {
+                padding: 10px;
+                margin: 15px;
+            }
+            .content.box {
+                padding: 30px;
+                margin: 10px;
+                background-color: #21e0e4;
+                border: 1px solid #ccc;
+            }
+            table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ffffff;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #08ecb6;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #1b0683;
+    }
+        </style>
+        <link rel="stylesheet" href="styles.css">
+        <div class="content box">
+            <h3>Testi sivusto</h3>
+            <p>Toivottavasti onnistuu!</p>
+        </div>
+    <div class="responsive-container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+    </div>
+<img src="./IMG_5734[12.JPG" alt="Responsive image" class="responsive-image">
+
+<div class="media-query-box">Resize the window to see the effect</div>
+        <style>
+               .media-query-box {
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .media-query-box {
+        background-color: lightcoral;
+    }
+}
+@media (min-width: 601px) {
+    .media-query-box {
+        background-color: lightseagreen;
+    }
+}
+            </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Alkuun</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12">Column 1</div>
+    <div class="col-md-4 col-12">Column 2</div>
+    <div class="col-md-4 col-12">Column 3</div>
+  </div>
+</div>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+
+<div class="card" style="width: 18rem;">
+  <img src="./IMG_5792.JPG" class="card-img-top" alt="Card Image">
+  <div class="card-body">
+    <h5 class="card-title">Card Title</h5>
+    <p class="card-text">This is a simple card example using Bootstrap.</p>
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+</div>
+<div class="alert alert-info" role="alert">
+  Tämä on varoitus—check it out!
+</div>
+</body>
+</html>
