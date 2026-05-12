@@ -13,23 +13,7 @@
             <a href="hinnasto.html">Hinnasto</a>
             <a href="yhteystiedot.html">Yhteystiedot</a>
     </div>
-<main>
-        <section>
-            <h2>Ota yhteyttä</h2>
-            <h3>
-                Jos asiasi ei ole kiireellinen, otathan yhteyttä sähköpostitse. Olemme sinuun yhteydessä mahdollisimman pian. 
-            </h3>
-            <form>
-                <label for="name">Nimi:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Sähköposti:</label>
-                <input type="email" id="email" name="email">
-                <label for="text">Kerro lyhyesti, mitä asiasi koskee:</label>
-                <input type="text" id="text" name="text">
-                <input type="submit" value="Lähetä">
-            </form>      
-        </section>
-    </main>
+
 </header>
 <body>
        <style>
@@ -81,8 +65,44 @@ body {
 .navbar a:hover {
   color:rgb(8, 0, 255);
 }
+
+.hero {
+  height: 145vh;
+  background-image: url(images/IMG_0422\ \(1\).JPG); 
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9),
+               0px 0px 20px rgba(0,0,0,0.6);
+  object-fit: contain;
+}
+  
     </style>
 
-<p>Jos asiasi on kiireellinen, soita numeroon:1254 0237 254</p>
+
+  <div class="top-banner"></div>
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Ota yhteyttä</h2>
+            <h3>
+                Jos asiasi ei ole kiireellinen, otathan yhteyttä sähköpostitse. Olemme sinuun yhteydessä mahdollisimman pian. 
+            </h3>
+             <form>
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email">
+                <label for="text">Kerro lyhyesti, mitä asiasi koskee:</label>
+                <input type="text" id="text" name="text">
+                <input type="submit" value="Lähetä">
+            </form>      
+            <p>Jos asiasi on kiireellinen, soita numeroon:1254 0237 254</p>
+    </div>
+  </div>
 </body>
 </html>
