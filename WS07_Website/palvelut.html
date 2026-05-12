@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Julian nettisivu</title>
 </head>
     <header>
     <div class="navbar">
@@ -16,14 +16,7 @@
 <body>
     <h2>Palvelut</h2>
     <p>Tarjoamme päivystävää eläinlääkäripalvelua, joka on saatavilla ympäri vuorokauden. Palveluihimme kuuluvat muun muassa:</p>
-    <ul>
-        <li>Yleiset terveystarkastukset</li>
-        <li>Ensiapukäsittelyt</li>
-        <li>Leikkauspalvelut</li>
-        <li>Röntgen- ja laboratoriotutkimukset</li>
-        <li>Neuvonta ja ohjaus</li>
-    </ul>
-    <p>Ota yhteyttä saadaksesi lisätietoja palveluistamme tai varataksesi ajan.</p>
+ 
        <style>
         .content {
       color: rgb(0, 0, 0);
@@ -36,6 +29,10 @@
     h1 {
       font-size: 2em;
     } 
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
 
      .navbar { 
   position: fixed;
@@ -73,7 +70,94 @@ body {
   color:rgb(8, 0, 255);
 }
 
+p {
+  text-align: center;
+}
+.kuva-box{
+  position:center;
+  width: 150px;
+}
 
-    </style>
+.kuva-box img{
+  width:100%;
+  display:block;
+}
+
+.box{
+  position:absolute;
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+  width:120px;
+}
+
+
+.box1 {
+  top: 175px;
+  right: 50%;
+  left: 45%;
+  display: flex;
+}
+
+.box2 {
+  top: 340px;
+  right: 270px;
+  display: flex;
+}
+
+.box3 {
+  top: 550px;
+  right: 270px;
+  display: flex;
+}
+
+.box4 {
+  top:340px;
+  left: 270px;
+  display: flex;
+}
+
+.box5 {
+  top: 550px;
+  left: 270px;
+  display: flex;
+}
+
+.kuva-box {
+   color:black;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+}
+.kuva-box:hover {
+ color: blue; 
+}
+
+@media (max-width: 768px){
+
+  .kuva-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .box{
+    position:static;
+    width:90%;
+    margin-top:10px;
+  }
+
+}
+</style>
+
+        <img src="./images/IMG_5662.jpeg" alt="Steffe" width="700" height="auto" style="display: block; margin: 0 auto;">
+<div class="kuva-box">
+  <div class="box box1">Kiireelliset hoitoa tarvitsevat tapaukset</div>
+  <div class="box box2">Ensiapu</div>
+  <div class="box box3">Leikkauspalvelut</div>
+  <div class="box box4">Röntgenkuvat</div>
+  <div class="box box5">Neuvonta ja ohjaus</div>
+</div>
 </body>
 </html>
