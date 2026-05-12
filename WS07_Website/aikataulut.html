@@ -6,14 +6,12 @@
     <title>Document</title>
 
 <header>
-<nav class="responsive-nav">
-      <ul class="nav-list">
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="palvelut.html">Palvelut</a></li>
-        <li><a href="aikataulut.html">Aikataulut</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-      </ul>
-</nav>
+   <div class="navbar">
+            <a href="index.html">Etusivu</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="aikataulut.html">Aikataulut</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+    </div>
 
 </header>
 </head>
@@ -32,6 +30,42 @@
     h1 {
       font-size: 2em;
     } 
+
+     .navbar { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+      }
+.navbar a {
+  display: inline-block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: black;
+} 
+
+.navbar {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 40px;
+  flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+body {
+  padding-top: 60px;
+}
+
+.navbar a {
+  color:black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color:rgb(8, 0, 255);
+}
     </style>
 </body>
 </html>

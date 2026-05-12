@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian nettisivu</title>
+    <link rel="stylesheet" href="styles.css">
     <header>
   <h1>Päivystävä eläinlääkäribussi</h1>
-    <nav class="responsive-nav">
-        <ul class="nav-list">
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="aikataulut.html">Aikataulut</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+            <a href="index.html">Etusivu</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="aikataulut.html">Aikataulut</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+    </div>
 </header>
-<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <style>
@@ -24,12 +22,55 @@
     }
     
     body {
-      background-color: rgb(246, 185, 255);
+      background-color: rgb(247, 197, 255);
     }
     
     h1 {
       font-size: 2em;
     } 
+
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+      .navbar { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+      }
+.navbar a {
+  display: inline-block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: black;
+} 
+
+.navbar {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 40px;
+  flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+body {
+  padding-top: 60px;
+}
+
+.navbar a {
+  color:black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color:rgb(8, 0, 255);
+}
+
     </style>
+<p>Päivystävä eläinlääkäribussi tarjoaa hoitoa nopeasti ja luotettavasti karvakaverillesi.</p>
+<p>Saavumme paikalle, jopa 30 minuutisssa ja tarjoamme juuri oikeaa hoitoa lemmikillesi.</p>
 </body>
 </html>
