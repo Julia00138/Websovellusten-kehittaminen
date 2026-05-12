@@ -58,3 +58,25 @@ body {
 .navbar a:hover {
   color:rgb(8, 0, 255);
 }
+
+.hero {
+  height: 100vh;
+  background-image: url(images/IMG_5023.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 50px;
+  color: rgb(251, 238, 238);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9),
+               0px 0px 15px rgba(0,0,0,0.6);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+}

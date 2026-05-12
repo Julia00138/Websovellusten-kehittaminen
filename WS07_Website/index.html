@@ -6,13 +6,21 @@
     <title>Julian nettisivu</title>
     <link rel="stylesheet" href="styles.css">
     <header>
-  <h1>Päivystävä eläinlääkäribussi</h1>
     <div class="navbar">
             <a href="index.html">Etusivu</a>
             <a href="palvelut.html">Palvelut</a>
-            <a href="aikataulut.html">Aikataulut</a>
+            <a href="hinnasto.html">Hinnasto</a>
             <a href="yhteystiedot.html">Yhteystiedot</a>
     </div>
+
+      <div class="top-banner"></div>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Tervetuloa päivystävän eläinlääkäribussin sivuille!</h1>
+      <h2>Hoitoa nopeasti ja luotettavasti, ilman stressiä.</h2>
+    </div>
+  </div>
+
 </header>
 </head>
 <body>
@@ -28,6 +36,12 @@
     h1 {
       font-size: 2em;
     } 
+    h2 {
+      font-size: 1.5em;
+      color: rgb(29, 236, 255);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.9),
+                   0px 0px 15px rgba(0,0,0,0.6);
+    }
 
     p {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -69,8 +83,51 @@ body {
   color:rgb(8, 0, 255);
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background-color: rgb(247, 197, 255)
+}
+
+
+
+.hero {
+  height: 100vh;
+  background-image: url(images/IMG_5023.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 50px;
+  color: rgb(25, 255, 220);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9),
+               0px 0px 20px rgba(0,0,0,0.6);
+}
+p {
+  font-size: 1.0em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
     </style>
 <p>Päivystävä eläinlääkäribussi tarjoaa hoitoa nopeasti ja luotettavasti karvakaverillesi.</p>
-<p>Saavumme paikalle, jopa 30 minuutisssa ja tarjoamme juuri oikeaa hoitoa lemmikillesi.</p>
+<p>Saavumme paikalle, jopa 30 minuutissa. Eläinlääkäribussissa hoidamme eläintäsi parhaalla mahdollisella tavalla, oli sitten kysessä leikkausta tarvitseva hoito tai pieni vamman hoito.</p>
+<p>Apunasi tilanteissa on ammattitaitoiset eläinlääkärit sekä teemme yhteistyötä eläinsairaaloiden kanssa, jos lemmikisi tarvitsee pidempää tarkkailua ja hoitoa.</p>
+<p>Löydät sivultamme tarkempia tietoja hinnoista sekä palveluistamme.</p>
+<div class="grid">
+  <img src="./images/IMG_0011.JPG" alt="Steffe" width="300" height="auto">
+  <p>Jokainen haluaa, että hänen lemmikkinsä saavat parhaan hoitonsa.</p>
+</div>
 </body>
 </html>
