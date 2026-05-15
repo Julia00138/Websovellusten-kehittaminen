@@ -68,23 +68,32 @@ body {
 }
 
 
-
-
 .oikealle {
   float: right;
   width: 500px;
-  display: flex;
+  display: block;
   justify-content: flex-end;
   align-items: top;
   padding-top: 50px;
 }
+@media (max-width: 768px) {
+  .oikealle {
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
 
     </style>
 
  <h3>
   Päivystyskäynti: 100 € lisätään joka kerta käyntiin.
 </h3>
+<div class="oikealle">
 <img src="images/IMG_2235.jpg" class="oikealle"> 
+</div>
+
 <h4>
   Röngtenkuvat:
 </h4>
@@ -114,7 +123,9 @@ body {
 <p>EKG: 80 €</p>
 <p>Röngtenkuvat: 95 €</p>
 
+<div class="oikealle"> 
 <img src="images/IMG_0401.JPG" class="oikealle">
+</div>
 <h4>
   Muu hoito:
 </h4>
